@@ -2,7 +2,7 @@ import sys
 import math
 
 def isPrime(n):
-    for j in range(int(pow(n,(1/2)))):
+    for j in range(2,int(pow(n,(1/2)))):
         if(i%j==0):
             return False;
     print(i);
