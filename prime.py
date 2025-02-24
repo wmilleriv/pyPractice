@@ -11,8 +11,10 @@ def isPrime(n):
 
 
 
-
-for i in range(pow(sys.maxsize, 2)):
+#primes=[0,1,2]
+f=open("primes.txt","a")
+for i in range(100000000000):
     if(isPrime(i)):
-       print(" is prime");
-    
+       f.write(i + ", ")
+   
+f.close()
