@@ -1,6 +1,8 @@
 import sys
 import math
+import csv
 
+#use this function to create initial list
 def isPrime(n):
     if n<1:
         return False;
@@ -14,13 +16,12 @@ def isPrime(n):
 
 
 
-#f=open("./primes.txt", "a+")
+f=open("./primes.txt", "a+")
 #primes=[]
 #for line in f:
- #   primes+=f.readline
+#    primes+=f.readline
 for i in range(100):
     if(isPrime(i)):
-        print(i)
-      # f.write(str(i))
-#f.close()
+       f.write(str(i)+ ", ")
+f.close()
     
