@@ -6,7 +6,7 @@ def isPrime(n):
         return False;
     if n<=3:
         return True;
-    for j in range(22,int(pow(n,(1/2)))):
+    for j in range(2,int(pow(n,(1/2))+1)):
         if(n%j==0):
             return False;
     return True;
