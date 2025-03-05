@@ -5,25 +5,27 @@ scWidth=screen.window_width()
 scHeight=screen.window_height()
 plane=turtle.Turtle()
 
-def drawVerticalLines(lineCount):
-    plane.setpos(0,0)
-    plane.down()
+def drawLines(lineCount):
+    plane.setpos(800,0)
     for i in range(int(lineCount/2)):
+        plane.down()
         plane.forward(800)
         plane.right(90)
-        plane.forward(scWidth/lineCount)
+        plane.up()
+        plane.forward(800/lineCount)
         plane.right(90)
-        plane.forward(scHeight)
-        plane.right(90)
-        plane.forward(scWidth/lineCount)
+        plane.down()
+        plane.forward(800)
+        plane.left(90)
+        plane.up()
+        plane.forward(800/lineCount)
+        plane.left(90)
         
-
 
 screen.screensize(800,800)
 turtle.setworldcoordinates(0,0,800,800)
 plane.speed(100)
 plane.left(90)
 
-drawVerticalLines(50)
-
+drawLines(10)
 turtle.mainloop()
