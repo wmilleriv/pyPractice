@@ -10,15 +10,24 @@ def drawYLines():
         plane.down()
         plane.forward(100000)
         plane.left(90)
-        print(scHeight/5)
         plane.forward(2)
         plane.left(90)
         plane.forward(100000)
         plane.right(90)
         plane.forward(2)
         plane.right(90)
-        
 
+def drawXLines():
+    for i in range (10):
+        plane.down()
+        plane.forward(100)
+        plane.left(90)
+        plane.forward(2)
+        plane.left(90)
+        plane.forward(100)
+        plane.right(90)
+        plane.forward(2)
+        plane.right(90)
 
 screen.screensize(800,800)
 turtle.setworldcoordinates(0,0,100000,10)
@@ -27,9 +36,10 @@ plane.color("green")
 drawYLines()
 plane.up()
 plane.setpos(800,0)
+plane.setheading(0)
+drawXLines()
 turtle.mainloop()
 
-drawYLines()
 k=1
 s=0
 
