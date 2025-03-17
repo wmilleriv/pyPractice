@@ -8,7 +8,7 @@ for i in range(100):
     steps=int(random()*1000)
     for c in ('blue', 'red', 'green'):
         t.color(c)
-        t.forward(1000)
-        t.right(175)
+        t.forward(random()*1000)
+        t.right(60)
 
 t.screen.mainloop()

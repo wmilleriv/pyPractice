@@ -37,12 +37,13 @@ label()
 k=1
 s=0
 
-for i in range(100000):
+i=0
+while(True):
     if(i%2==0):
         s+=4/k
     else:
         s-=4/k
-
+    i+=1
     k+=2
 
     plane.setpos(i*100,s)
