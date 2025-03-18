@@ -1,0 +1,3 @@
+import shapeLib
+
+shapeLib.drawSquare()
