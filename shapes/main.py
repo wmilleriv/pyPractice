@@ -18,7 +18,8 @@ shapeLib.drawQuadrilateral(turt,0,-250,0,-100,100,-100,100,-250)
 turt.end_fill()
 turt.fillcolor("yellow")
 turt.begin_fill()
-
+turt.teleport(80,-150)
+turt.dot()
 turt.end_fill()
 
 turt.screen.mainloop()
