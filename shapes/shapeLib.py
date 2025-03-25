@@ -1,14 +1,16 @@
 import turtle
 
 
-def drawQuadrilateral(turt,x1,y1,x2,y2,x3,y3,x4,y4):
+def drawQuadrilateral(turt,x1,y1,x2,y2,x3,y3,x4,y4, fillColor, borderColor):
     turt.up()
     turt.setpos(x1,y1)
+    tur.begin_fill()
     turt.down()
     turt.goto(x2,y2)
     turt.goto(x3,y3)
     turt.goto(x4,y4)
-    turt.goto(x1,y1)
+    turt.goto(x1,y1)a
+    tur.end_fill()
 
 def drawTriangle(turt,x1,y1,x2,y2,x3,y3):
     turt.up()
