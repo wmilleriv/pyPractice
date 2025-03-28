@@ -2,7 +2,7 @@ import turtle
 import shapes
 
 t=turtle.Turtle()
-t.speed(100)
+#t.speed(100)
 x=-40
 y=150
 for i in range(4):
