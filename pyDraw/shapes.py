@@ -17,7 +17,7 @@ def drawSquare(trt, tlCorner, length, border="#000000", fill="#FFFFFF"):
 def drawTriangle(trt, p1,p2,p3, border="#000000", fill="#FFFFFF"):
     trt.up()
     trt.pencolor(border)
-    trt.fillColor(fill)
+    trt.fillcolor(fill)
     trt.setpos(p1[0],p1[1])
     trt.down()
     trt.begin_fill()

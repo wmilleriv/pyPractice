@@ -1,6 +1,10 @@
 import turtle
 import shapes
 
+t=turtle.Turtle()
+t.speed(100)
+shapes.drawTriangle(t, (0,0),(100,300),(50,70),"blue", "red")
+turtle.done()
 """
 t=turtle.Turtle()
 #t.speed(100)
