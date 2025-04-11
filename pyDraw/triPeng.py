@@ -3,8 +3,18 @@ import shapes
 
 t=turtle.Turtle()
 t.speed(100)
-shapes.drawTriangle(t, (0,0),(100,300),(50,70),"blue", "red")
+x=0
+y=150
+for i in range 50:
+    shapes.drawTriangle(t, (x,y),(x+10,y-i    
+shapes.drawTriangle(t, (0,150),(10,149),(0,0),"blue", "red")
+shapes.drawTriangle(t, (10,149),(20,147),(0,0),"blue", "red")
+shapes.drawTriangle(t, (20,147),(30,144),(0,0),"blue", "red")
+shapes.drawTriangle(t, (30,144),(40,140),(0,0),"blue", "red")
+shapes.drawTriangle(t, (40,140),(50,136),(0,0),"blue", "red")
+shapes.drawTriangle(t, (50,136),(60,131),(0,0),"blue", "red")
 turtle.done()
+
 """
 t=turtle.Turtle()
 #t.speed(100)

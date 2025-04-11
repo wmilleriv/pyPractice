@@ -1,13 +1,16 @@
-f=open("TestMessage1.txt")
+f=open("SecretMessageThree.txt")
 out=""
 firstPass=[]
 data=f.read().split()
+charCount=0
 for char in data:
+    charCount+=1
     char=int(char)
-    offset=0
+    offset=20
     while(char%128!=0):
-        char-=1
+        char-=20
+        offset+=1
     firstPass.append(char)
-    print(offset)
+    print(firstPass)
     out+=chr(char)
-print(out)
+print(charCount)
