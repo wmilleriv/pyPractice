@@ -1,14 +1,29 @@
 import turtle
 
+trt=turtle.Turtle()
+
 def drawTree(branchLength, angle, level, thickness):
     if level==0:
-        turtle.dot(10,"pink")
+        trt.dot(10,"pink")
         return
     if level > 5:
-        turtle.color("brown")
+        trt.color("brown")
     else:
-        turtle.color("green")
+        trt.color("green")
     
-    turtle.pensize(thickness)
-    turtle.left(angle)
+    trt.pensize(thickness)
+    trt.left(angle)
+    drawTree(branchLength*0.9, angle, level-1, thickness-1)
+    trt.right(2*angle)
+    drawTree(branchLength *0.9, angle, level-1, thickness-1)
+    trt.left(angle)
+    trt.backward(branchLength)
 
+trt.up()
+trt.speed(100)
+trt.setpos(0,-250)
+trt.color("brown")
+trt.down()
+trt.left(90)
+drawTree(100,25,8,10)
+turtle.done()
