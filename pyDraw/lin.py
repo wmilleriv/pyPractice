@@ -1,23 +1,19 @@
 import turtle
-ht=turtle.Turtle()
+t = turtle.Turtle()
 
-def drawHeart(branchLength, angle, level):
-    if level == 0:
-        return
-    ht.forward(branchLength)
-    ht.left(angle)
-    drawHeart(branchLength*.9,angle, level -1)
-    ht.right(2*angle)
-    drawHeart(branchLength*.9,angle, level -1)
-    ht.left(angle)
-    ht.backward(branchLength)
-ht.up()
-ht.pencolor("red")
-ht.speed(0)
-ht.setpos(0,-200)
-ht.down()
-ht.left(90)
-drawHeart(100, 25, 10)
-ht.pencolor("black")
-ht.write("Happy birthday")
+def drawHeart():
+    t.fillcolor("red")
+    t.begin_fill()
+    t.left(50)
+    t.fd(120)
+    t.circle(45,200)
+    t.lt(221)
+    t.circle(45,200)
+    t.fd(130)
+    t.end_fill()
+
+t.pencolor("red")
+t.speed(80)
+t.down()
+drawHeart()
 turtle.done()
