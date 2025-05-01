@@ -20,6 +20,6 @@ t.up()
 t.setpos(-600,0)
 t.down()
 for i in range(3):
-    koch(600.0,4)
-    t.left(-120)
+    koch(300.0,4)
+    t.left(120)
 turtle.done()
