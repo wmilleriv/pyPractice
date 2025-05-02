@@ -14,6 +14,16 @@ def drawHeart(size):
 def drawAi(size):
     t.left(190)
     t.fd(size)
+    t.up()
+    t.left(80)
+    t.fd(size/8)
+    t.down()
+    t.left(20)
+    t.fd(size/8)
+    t.left(70)
+    t.fd(size/3)
+    t.left(120)
+    
     
 t.pencolor("red")
 t.speed(80)
