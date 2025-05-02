@@ -1,7 +1,7 @@
 import turtle
 t = turtle.Turtle()
 
-def drawHeart():
+def drawHeart(size):
     t.fillcolor("red")
     t.begin_fill()
     t.left(50)
@@ -11,9 +11,12 @@ def drawHeart():
     t.circle(45,200)
     t.fd(130)
     t.end_fill()
-
+def drawAi(size):
+    t.left(190)
+    t.fd(size)
+    
 t.pencolor("red")
 t.speed(80)
 t.down()
-drawHeart()
+drawAi(120)
 turtle.done()
