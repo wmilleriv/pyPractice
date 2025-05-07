@@ -178,6 +178,7 @@ def drawNi(size):
     t.down()
     t.fd(size*.2)
 
+def drawZhu(size):
 
 
 
@@ -197,4 +198,8 @@ t.up()
 t.setheading(0)
 t.fd(100)
 drawNi(120)
+t.pencolor("black")
+t.speed(5)
+drawZhu()
+
 turtle.done()
