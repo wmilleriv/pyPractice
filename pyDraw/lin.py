@@ -179,9 +179,26 @@ def drawNi(size):
     t.fd(size*.2)
 
 def drawZhu(size):
-
-
-
+    t.down()
+    t.setheading(245)
+    t.fd(size/4)
+    t.backward(size/8)
+    t.setheading(0)
+    t.fd(size*.6)
+    t.backward(size*.3)
+    t.setheading(90)
+    t.fd(size*.2)
+    t.backward(size)
+    t.fd(size*.6)
+    t.setheading(180)
+    t.fd(size*.4)
+    t.backward(size*.8)
+    t.fd(size*.4)
+    t.setheading(235)
+    t.fd(size*.6)
+    t.backward(size*.6)
+    t.setheading(305)
+    t.fd(size*.6)
     
 t.pensize(10)
 t.pencolor("red")
@@ -198,8 +215,10 @@ t.up()
 t.setheading(0)
 t.fd(100)
 drawNi(120)
+t.up()
 t.pencolor("black")
+t.setpos(-200,0)
 t.speed(5)
-drawZhu()
+drawZhu(200)
 
 turtle.done()
