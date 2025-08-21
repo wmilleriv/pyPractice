@@ -2,7 +2,7 @@ import turtle
 import os
 import sys,time,random
 
-typing_speed = 500 #wpm
+typing_speed = 50 #wpm
 
 def slow_type(t):
     for l in t:
@@ -25,7 +25,7 @@ def draw_w(t):
 
 def draw_e(t):
     t.right(90)
-    t.forward(10)
+    t.forward(20)
     t.setheading(0)
     t.pendown()
     t.forward(60)
@@ -41,32 +41,40 @@ def draw_e(t):
     t.forward(60)
 
 def draw_l(t):
-    t.pendown()
     t.right(90)
-    t.forward(150)
+    t.forward(20)
+    t.pendown()
+    t.forward(120)
 
     t.right(-90)
     t.forward(70)
 
 def draw_c(t):
+    t.forward(50)
+    t.sety(40)
     t.pendown()
     t.right(180)
-    t.circle(50,180)
+    t.circle(70,180)
 
 def draw_o(t):
+    t.forward(80)
+    t.sety(-90)
+    t.setheading(0)
     t.pendown()
-    t.circle(50,None,50)
+    t.circle(60,None,60)
 
 def draw_m(t):
+    t.forward(50)
+    t.sety(-90)
     t.pendown()
-    t.right(65)
-    t.forward(150)
-    t.left(130)
+    t.left(70)
     t.forward(100)
+    t.right(130)
+    t.forward(60)
 
-    t.right(120)
-    t.forward(100)
-    t.left(130)
+    t.left(120)
+    t.forward(60)
+    t.right(130)
     t.forward(100)
 
 def space(t):
@@ -89,10 +97,10 @@ while True:
     
 
     t=turtle.Turtle()
-    t.screen.setup(width=800, height=300, startx=500, starty=300) 
+    t.screen.setup(width=1000, height=300, startx=300, starty=300) 
     t.pensize(10)
     t.penup()
-    t.goto(-350, 50)
+    t.goto(-450, 50)
     t.pencolor("blue")
     draw_w(t)
     space(t)
@@ -113,6 +121,9 @@ while True:
     space(t)
     t.pencolor("red")
     draw_e(t)
+    t.penup()
+    t.goto(0,100)
+    t.right(1800)
     t.screen.clear()
 
     os.system('clear') 
