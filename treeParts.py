@@ -2,12 +2,14 @@ import turtle
 
 t=turtle.Turtle()
 
-def drawTrunk(t, width, height):
-    t.fwd(width)
+def drawTrunk(t, width, height,color):
+    t.fd(width)
     t.right(90)
-    t.fwd(height)
+    t.fd(height)
     t.right(90)
-    t.fwd(width)
+    t.fd(width)
     t.right(90)
-    t.fwd(height)
+    t.fd(height)
+    t.fillcolor(color)
 
+drawTrunk(t,20,100,"brown")
