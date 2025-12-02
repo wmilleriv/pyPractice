@@ -39,7 +39,11 @@ def drawStar(t,span,color="yellow"):
     t.end_fill()
 
 def drawCircle(t,diameter,color):
+    t.fillcolor(color)
+    t.begin_fill()
+    t.circle(diameter/2)
+    t.end_fill()
+    
 
-
-drawStar(t,100)
+drawCircle(t,100,"red")
 turtle.done()
