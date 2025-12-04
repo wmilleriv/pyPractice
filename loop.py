@@ -14,3 +14,8 @@ for i in range(10):
         else:
             print(" ", end="")
     print()
+
+for i in range(10):
+    for j in range(i):
+         v
+
