@@ -1,7 +1,4 @@
-import turtle
 import math
-
-t=turtle.Turtle()
 
 def drawTrunk(t, width, height, color="brown"):
     t.fillcolor(color)
@@ -47,4 +44,3 @@ def drawCircle(t,diameter,color):
     
 
 
-turtle.done()

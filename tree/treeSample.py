@@ -4,7 +4,7 @@ import treeParts
 t=turtle.Turtle()
 t.up()
 t.setpos(-20,-50)
-parts.drawTrunk(t,40, 60,"brown")
+treeParts.drawTrunk(t,40, 60,"brown")
 t.setpos(-100,-50)
 t.setheading(0)
 treeParts.drawIsoTriangle(t, 200, 100, "green")
