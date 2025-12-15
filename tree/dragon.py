@@ -13,6 +13,7 @@ t.setpos(-90,-20)
 t.setheading(225)
 treeParts.drawTrunk(t,100,20,"green")
 
+
 treeParts.drawTrunk(t,100,20,"green")
 treeParts.drawTrunk(t,100,20,"green")
 treeParts.drawTrunk(t,100,20,"green")
@@ -20,7 +21,7 @@ treeParts.drawTrunk(t,100,20,"green")
 treeParts.drawTrunk(t,100,20,"green")
 treeParts.drawTrunk(t,100,20,"green")
 
-
+treeParts.drawIsoTriangle(t, 100,100,"yellow")
 
 
 
